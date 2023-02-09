@@ -1,0 +1,128 @@
+body{
+   line-height: 1.5;
+}
+
+
+header, nav{
+    /* Set padding and margin */
+    padding: 30px 5px;
+    margin: 10px 5px;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    padding: 10px 30px;
+    margin: 20px 15px 0px 100px;
+    font-size: 150%;
+    background-color: wheat;
+    display: block;
+    float: left;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: blue;
+
+}
+
+a:visited{
+    color: black
+
+}
+
+nav a.current{
+    text-decoration: underline wavy 2px;
+    text-transform: uppercase;
+    text-underline-offset: 20%;
+    /* Set text decoration, transformation, and underline properties */
+}
+
+
+h1{
+   /*Set font and font size*/
+   font-family: Merriweather, Anton, Times New Roman;
+   font-size: 300%;
+   text-align: left;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-family: Anton, Times New Roman;
+    font-size: 150%;
+    text-align: center;
+
+}
+
+h3{
+    /*Set font size*/
+    font-size: 125%;
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin-top: 70px;
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 10px;
+    background-color: rgb(109, 123, 157);
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: 3px solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 5px 0px 5px 3px  rgb(183, 183, 183);
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */
+    box-shadow: -5px 0px 5px 3px  rgb(183, 183, 183);
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+    box-shadow: 5px 0px 5px 3px  rgb(183, 183, 183), -5px 0px 5px 3px rgb(183, 183, 183);
+    }
+
+
+p + p {
+     /* Set indentation */
+    text-indent: 25px;
+  }
+
+p{
+     /* Set margin */
+     margin: 10px 0px
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    margin: 0px 0px 15px 30px;
+    line-height: 1;
+    list-style-image: url("../images/sketchbook.png");
+}
